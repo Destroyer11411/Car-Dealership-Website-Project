@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Dealership</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    * {
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .body {
+      background-color: black;
+    }
+
+    .tableheading {
+      text-align: center;
+
+    }
+
+    .Checkout {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      margin-left: 120px;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 70px;
+    }
+
+
+
+    .tablebody {
+      font-family: "Georgia", Times, serif;
+      font-size: large;
+    }
+
+
+
+    /* Slideshow container */
+    .slideshow-container {
+      /* max-width: 1000px; */
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin-top: 55px;
+      /* display: flex;
+      justify-content: center; */
+      background-color: black;
+
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(112, 112, 112);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .8
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+
+    .cont {
+
+      background-color: black;
+
+
+    }
+
+    .geading {
+      text-align: center;
+      color: wheat;
+      text-decoration: underline;
+    }
+
+    .catbuton1 {
+      margin-left: 350px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: black;
+      color: blue;
+
+
+    }
+
+    .catbuton1:hover {
+      /* background-color: lightgreen; */
+      color: pink;
+    }
+
+    .catbuton2:hover {
+      /* background-color: lightgreen; */
+      color: pink;
+    }
+
+
+
+
+    .catbuton2 {
+      margin-left: 350px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: black;
+      color: blue;
+
+
+
+    }
+
+    .fbb {
+      margin-left: 500px;
+    }
+
+    .instt {
+      margin-left: 300px;
+    }
+
+    .twitt {
+      margin-left: 300px;
+    }
+
+    .headingdesc{
+      text-align: center !important;
+      text-decoration: underline;
+      font-size: 55px;
+    }
+
+    .paradesc{
+      font-size: 30px;
+    }
+
+    .bttuu {
+  border-radius: 4px;
+  background-color: #dd6666;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.bttuu{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bttuu:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bttuu:hover{
+  padding-right: 10px;
+  padding-left:8px;
+}
+
+.bttuu:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+.socimg{
+  border-radius: 5px;
+}
+
+
+  </style>
+
+</head>
+<!-- navbar-light bg-primary text-dark -->
+
+<body>
+
+
+
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color:rgb(246, 96, 96);">
+    <!-- <nav class="navbar navbar-light" style="background-color:#e3f2fd;"> -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="new.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newarrivals.php">Newest Arivals</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sports.php">Sports cars</a></li>
+              <li><a class="dropdown-item" href="luxory.php">Luxury cars</a></li>
+              <li><a class="dropdown-item" href="Hatchbacks.php">Hatchbacks</a></li>
+              <li><a class="dropdown-item" href="JDM.php">JDM</a></li>
+              <li><a class="dropdown-item" href="sedans.php">Sedans</a></li>
+              <li><a class="dropdown-item" href="SUV.php">SUV</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="new.html">Home</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="lambo1.jpg" style="width:100%" height="100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="lambo2.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="lambo3.jpg" style="width:100%" ">
+
+    </div>
+
+
+  </div>
+  <br>
+  
+
+  <!-- The dots/circles -->
+  <div style=" text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="home lambo1.jpg" width="100%">
+
+
+    <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="homelambo2.jpg" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >Sports Cars</h2>
+         <br>
+         <p class="paradesc">Undeniably stylish and universally fun to drive, these are the best cars for showcasing one's personality and triggering the driver's dopamine release.</p>
+         <a href="sports.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="mercmain.jpg" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >Luxury Cars</h2>
+         <br>
+         <p class="paradesc"> Place where comfort meets power, The ultimate definition of luxury on wheels</p>
+         <a href="luxory.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="home hatchback.jpg" width="91.5%" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >Hatchbacks</h2>
+         <br>
+         <p class="paradesc">These may be quite small in size but don't go on size of these the power this pocket rocket packs can make any modern sedans go abck to their pits </p>
+         <a href="Hatchbacks.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="home jdm.png" width="91.5%" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >JDM specials</h2>
+         <br>
+         <p class="paradesc">These Japan only built beast may not look as good as an modern McLaren but the performance they offer are no match to anything else like them  </p>
+         <a href="JDM.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="home sedan.jpg" width="91.5%" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >Sedans</h2>
+         <br>
+         <p class="paradesc">These are the machines build to be daily driven around the city and also to take them to  roadtrip with comfort and to be practical as possible</p>
+         <a href="sedans.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="home suv.jpg" width="91.5%" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 ">
+         <h2 class="headingdesc" >SUV's</h2>
+         <br>
+         <p class="paradesc">These monster of a machines are built to conquer both the road and off-road without a hickup in performance</p>
+         <a href="SUV.php">
+<button class="bttuu"><span>Hop in</span></button>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+  
+
+
+    <!-- <img src="homepurrari.jpg" width="100%">
+
+    <img src="homelambo2.jpg" width="100%"> -->
+
+
+
+
+    <div class="cont">
+      <br>
+      <br>
+      <h2 class="geading"> Categories </h2>
+      <br>
+      <br>
+      <div class="pirst">
+        <a href="sports.php">
+          <button class="catbuton1"> Sports Cars </button>
+        </a>
+        <a href="luxory.php">
+          <button class="catbuton1"> Luxury Cars </button>
+        </a>
+        <a href="sedans.php">
+          <button class="catbuton1"> Sedans </button>
+        </a>
+      </div>
+
+      <div class="checkond">
+        <a href="Hatchbacks.php">
+          <button class="catbuton2"> Hatchbacks </button>
+        </a>
+        <a href="JDM.php">
+          <button class="catbuton2"> JDM Cars </button>
+        </a>
+        <a href="SUV.php">
+          <button class="catbuton2"> SUV </button>
+        </a>
+
+      </div>
+
+      <h2 class="geading"> Social Media</h2>
+      <br>
+      <br>
+
+
+      <div class="social">
+
+        <a href="https://www.facebook.com" class="fbb">
+          <img class="socimg"  src="fbicon.jpg" width="5%">
+
+
+        </a>
+
+        <a href="https://www.instagram.com" class="instt">
+          <img  class="socimg"  src="insta2.png" width="5%">
+
+
+        </a>
+
+        <a href="https://www.twitter.com" class="twitt">
+          <img  class="socimg"  src="twitter11.jpg" width="5%">
+
+
+        </a>
+
+
+
+
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+</body>
+
+</html>

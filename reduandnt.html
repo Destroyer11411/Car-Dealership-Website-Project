@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Dealership</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* * {
+      box-sizing: border-box
+    } */
+
+    .tableheading {
+      text-align: center;
+
+    }
+
+    .Checkout {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      margin-left: 120px;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 70px;
+    }
+
+
+
+    .tablebody {
+      font-family: "Georgia", Times, serif;
+      font-size: large;
+    }
+
+
+
+    /* Slideshow container */
+    .slideshow-container {
+      /* max-width: 1000px; */
+
+      width: auto;
+      position: relative;
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .8
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+
+    .cont {
+      
+      background-color: black;
+
+    }
+    
+  </style>
+
+</head>
+<!-- navbar-light bg-primary text-dark -->
+
+<body>
+
+
+
+  <nav class="navbar fixed-top navbar-expand-lg" style="background-color:rgb(246, 96, 96);">
+    <!-- <nav class="navbar navbar-light" style="background-color:#e3f2fd;"> -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="new.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Newest Arivals</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sports.html">Sports cars</a></li>
+              <li><a class="dropdown-item" href="luxory.html">Luxory cars</a></li>
+              <li><a class="dropdown-item" href="Hatchbacks.html">Hatchbacks</a></li>
+              <li><a class="dropdown-item" href="JDM.html">JDM</a></li>
+              <li><a class="dropdown-item" href="sedans.html">Sedans</a></li>
+              <li><a class="dropdown-item" href="SUV.html">SUV</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="new.html">Home</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="lambo1.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="lambo2.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="lambo3.jpg" style="width:100%">
+
+    </div>
+
+
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <img src="home lambo1.jpg" width="100%">
+
+  <img src="homepurrari.jpg" width="100%">
+
+  <img src="homelambo2.jpg" width="100%">
+
+  
+
+
+
+
+
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+       
+  //   <form >
+
+
+
+  //   <table border="border" class="table">
+  //       <thead>
+  //         <tr>
+  //           <th></th>
+  //           <th class="tableheading"> Newest arrivals </th>
+  //           <th> </th>
+  //           <th> </th>
+  //           <th></th>
+  //         </tr>
+  //       </thead>
+    
+  //       <tbody class="tablebody">
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td> <img src="download.jpg" width="70%"></td>
+  //           <td> Model          : Lamborghini URUS<br>
+  //               Make            : Lamborghini<br>
+  //               Engine          : twin turbo v8<br>
+  //               Horsepower      : 478 kW<br>
+  //               price           : 3.10cr<br>
+              
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="BMWix3-SUV.jpg" width="70%"></td>
+  //           <td> Model    : BMW X3 <br>
+  //                Make     : BMW <br>
+  //               Engine    : 4-cylinder<br>
+  //               Horsepower:185 kw<br>
+  //               price     : 57.50 Lakh<br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="astonmartindbx-suv.png"  width="70%"></td>
+  //           <td> Model    : DBX <br>
+  //                Make     : Aston martin<br>
+  //               Engine    : 4.0L V8<br>
+  //               Horsepower:405 kw<br>
+  //               price     : 1.3Cr <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="porsche1-suv.jpg"  width="70%"></td>
+  //           <td> Model    : Cayenne <br>
+  //                Make     : Porsche<br>
+  //               Engine    : 4.0L V8<br>
+  //               Horsepower:404 kw<br>
+  //               price     : 1.2Cr <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="rollsroyce-suv.jpg"  width="70%"></td>
+  //           <td> Model    : Cullinan <br>
+  //                Make     : Rolls Royce<br>
+  //               Engine    : 6.7L V12<br>
+  //               Horsepower:441 kw<br>
+  //               price     : 6.9Cr <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="tesla-x-suv.png"  width="70%"></td>
+  //           <td> Model    : Model X <br>
+  //                Make     : Tesla<br>
+  //               Engine    :Dual electric motor<br>
+  //               Horsepower:375 kw<br>
+  //               price     : 74 Lakh <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="Linclonsuv.jpg"  width="70%"></td>
+  //           <td> Model    : Navigator L <br>
+  //                Make     : Lincoln<br>
+  //               Engine    : 3.5L twin turbo V6<br>
+  //               Horsepower:405 kw<br>
+  //               price     : 63.8 Lakh <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="volvo suv.jpg"  width="70%"></td>
+  //           <td> Model    : Xc90 <br>
+  //                Make     : Volvo<br>
+  //               Engine    : 3.0L 4 cylinder<br>
+  //               Horsepower:299 kw<br>
+  //               price     : 80.90 Lakh <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="cadillac suv.jpg"  width="70%"></td>
+  //           <td> Model    : Esclade <br>
+  //                Make     : Cadillac<br>
+  //               Engine    : 4.0L 4 cylinder<br>
+  //               Horsepower:207 kw<br>
+  //               price     : 1.2Cr <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+
+  //         <tr>
+  //           <td> <br> <br> <br></td>
+  //           <td width="700px"> <img src="Rivian-suv.jpg"  width="70%"></td>
+  //           <td> Model    : R1S <br>
+  //                Make     : Rivian<br>
+  //               Engine    :Quad electric motor<br>
+  //               Horsepower:800 HP<br>
+  //               price     : 52.16 Lakh <br>
+  //           </td>
+  //           <td> <a href="#" class="Checkout">
+  //             <button type="button" class="btn btn-success">Checkout</button>
+  //           </a>
+              
+  //           </td>
+  //           <td><br><br><br></td>
+  //         </tr>
+    
+         
+  //       </tbody>
+  //     </table>
+
+  //   </form> -->
+  // </script>
+
+</body>
+
+</html>
